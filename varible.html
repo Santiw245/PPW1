@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Belajar Varible dalam Js</title>
+        <script>
+            //Membuat varible
+            var name = "Simaster UGM";
+            let visitCount = 5392;
+            isActive = true;
+            var url = "https://simaster.ugm.ac.id/"
+
+            //Menampilkan varible ke jendela dialog (alert)
+            alert("Selamat datang di " + name);
+
+            //Menampilkan varible ke dalam HTML
+            document.write("Nama Situs: " + name + "<br>");
+            document.write("Jumlah Pengunjung: " + visitCount + "<br>");
+            document.write("Status Aktif: " + isActive + "<br>");
+            document.write("Alamat URL: " + url + "<br>");
+
+            visitCount = 5590;
+            delete isActive;
+
+            document.write("<br>" + "Jumlah Pengunjung: " + visitCount + "<br>");
+        </script>
+    </head>
+    <body>
+        <!-- Jendela dialog alert() -->
+        <button onclick="alert('Laman Web Simaster: ' + url)">Klik disisni</button>
+
+        <!-- Jendela dialog confirm() -->
+        <script>
+            var yakin = confirm("Apakah kamu yakin akan mengunjungi Simaster UGM?")
+
+            if (yakin) {
+                location = "https://simaster.ugm.ac.id/";
+            }
+            else {
+                document.write("<br>Baikah, tetap disini saja ya :)");
+            }
+        </script>
+
+        <!-- Jendela dialog promp() -->
+        <script>
+            var nama = prompt("Siapa nama kamu?", "Pengunjung");
+            document.write("<p>Hello " + nama + "</p>");
+        </script>
+
+        <script>
+            var a = 5;
+            var b = 3;
+
+            //menggunakan operator penjumlahan
+            var c = a + b;
+            console.log(c);
+            var d = "5" - "3";
+            console.log(d);
+
+            //Operator Penugasan
+            document.write("<h3>Operator Penugasan</h3>");
+            document.write("Pengunjung web awal: " + visitCount + "<br/>");
+            visitCount += 5;
+            document.write("Jumlah Pengunjung ditambah 5: " + visitCount + "<br/>");
+            visitCount -= 5;
+            document.write("Jumlah Pengunjung dikurang 5: " + visitCount + "<br/>");
+            visitCount /= 2;
+            document.write("Jumlah Pengunjung dibagi 2: " + visitCount + "<br/>");
+
+            //Operator Perbandingan
+            document.write("<h3>Operator Perbandingan</h3>");
+            aku = 10;
+            kamu = 20;
+
+            //sama dengan
+            var hasil = aku == kamu;
+            document.write(aku +  " == "  + kamu + ": " + hasil + "<br/>");
+            var hasil = aku > kamu;
+            document.write(aku +  " > "  + kamu + ": " + hasil + "<br/>");
+            var hasil = aku <= kamu;
+            
+            var hasil = aku != kamu;
+            document.write(aku +  " != "  + kamu + ": " + hasil + "<br/>");
+
+            var x = "1";
+            var y = 1;
+            hasil = x === y;
+            document.write("Tipe data x" + " === "  + "tipe data y " + ": " + hasil + "<br/>");
+
+            //Operator Logika
+            document.write("<h3>Operator Logika</h3>");
+            var benar = aku < kamu;
+            var salah = aku > kamu;
+
+            var hasil = benar && salah;
+            document.write(benar +  " && "  + salah + ": " + hasil + "<br/>");
+            var hasil = benar || salah;
+            document.write(benar +  " || "  + salah + ": " + hasil + "<br/>");
+            var hasil = !benar ;
+            document.write("!"+benar +  ": " + hasil + "<br/>");
+            
+            //Operator Bitwise
+            document.write("<h3>Operator Bitwise</h3>");
+        </script>
+    </body>
+</html>
