@@ -1,0 +1,42 @@
+body {
+    background-color:  	#F5F5DC;
+}
+
+img.x1 {
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+header {
+    padding: 30;
+    right: 144;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+nav.menus {
+    padding: 10px;
+}
+
+nav.menus ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav.menus ul li {
+    display: inline-block;
+}
+
+nav.menus ul li a {
+    display: block;
+    padding: 3px 7px;
+    color: #fff;
+}
+
+nav.menus ul li a:hover, nav.menus ul li a:focus {
+    text-decoration: none;
+    background-color: #c0392b;
+    color: #fff;
+}
